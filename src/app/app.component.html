@@ -1,0 +1,30 @@
+<header class="header">
+  <h1>The best dark mode example with angular</h1>
+</header>
+<main>
+  <section>
+    <header>
+      <h2 class="text-center">Dark mode</h2>
+    </header>
+    <article class="padding">
+      <p class="text-center">
+        It also works if you have dark mode activated on your device or browser.
+      </p>
+      <router-outlet></router-outlet>
+    </article>
+  </section>
+  <section>
+    <header>
+      <h2 class="text-center">Button to toogle dark mode</h2>
+    </header>
+    <article class="center-item padding">
+      <button class="button" (click)="toggleDarkMode()" type="button">
+        {{ buttonText ?? 'Toggle Dark Mode 🌑'}}
+      </button>
+      <router-outlet></router-outlet>
+    </article>
+  </section>
+</main>
+<footer class="footer">
+  <p>By <a href="" class="link">@iamjosafatmtz</a></p>
+</footer>
